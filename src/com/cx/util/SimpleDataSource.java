@@ -1,7 +1,8 @@
-package com.flowers.util;
+package com.cx.util;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+
 import org.apache.commons.dbcp.BasicDataSource;
 
 public class SimpleDataSource {

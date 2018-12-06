@@ -1,17 +1,16 @@
-package com.flowers.util.support;
+package com.cx.util.support;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.flowers.util.JdbcUtil;
-import com.flowers.util.SimpleDataSource;
-
+import com.cx.util.JdbcUtil;
+import com.cx.util.SimpleDataSource;
 
 public class JdbcTemplate {
 
-	public static void execute(IPreparedStatementCallBack pscb) {
+	public void execute(IPreparedStatementCallBack pscb) {
 		Connection conn = null;
 		PreparedStatement pst = null;
 		try {
@@ -35,7 +34,7 @@ public class JdbcTemplate {
 		}
 	}
 
-	public static Object exetuteQuery(IPreparedStatementCallBack pscb,
+	public Object exetuteQuery(IPreparedStatementCallBack pscb,
 			IResultSetCallBack rscb) {
 		Connection conn = null;
 		PreparedStatement pst = null;
